@@ -19,7 +19,7 @@ console.log(welcomeMsg(nameVal));
 // Manage complexity by hiding implementation details.
 // Can call themselves to solve problems recursively.
 
-
+// function expression = when variable hold function
 const mul = function(x,y){
     return x*y;
     

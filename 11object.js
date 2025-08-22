@@ -56,3 +56,28 @@ for(let key in obj){
     console.log(key,obj[key]);
     
 }
+
+
+let person ={
+    name:"karan sharma",
+    age:20,
+    marks:35,
+    student(){
+        console.log(`hi i am ${this.name} `);
+        
+    }
+
+
+}
+console.log(person.name);
+person.name="rahul"
+console.log(person);
+person.city='kangra'
+console.log(person);
+delete person.marks
+console.log(person);
+person.student()
+
+
+
+

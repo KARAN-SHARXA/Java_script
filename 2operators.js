@@ -43,3 +43,17 @@ console.log(status);
 let x = 5;
 console.log(++x); // Pre-increment
 console.log(x--); // Post-decrement (Output: 6, then x becomes 5)
+
+// post increment = first the current value of x is used in the expression then x is increased by 1
+let x1= 51;
+console.log(x1++);
+console.log(x);
+
+// pre-increment ++x = first increased by one then the new value  used 
+let x2= 5;
+console.log(++x);
+console.log(x2);
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="para">hello world</p>
+    <p class="text">one</p>
+    <p class="text">two</p>
+
+    <h1>heading</h1>
+    <p>paragrapg1</p>
+    <p>paragraph2</p>
+
+
+    <p class="demo">kkk</p>
+    <p class="demo">tkk</p>
+
+
+
+
+    <script>
+        //getElementById("id")
+
+//Selects one element with a specific id.
+
+//Returns a single element (or null if not found).
+
+let p = document.getElementById("para");
+console.log(p);
+console.log(p.innerText);
+
+
+
+// 2. getElementsByClassName("class")
+
+// Selects multiple elements with the same class.
+
+// Returns HTMLCollection (like an array but not exactly).
+
+let items = document.getElementsByClassName("text");
+console.log(items);
+console.log(items[0].innerHTML);
+
+
+//getElementsByTagName("tag")
+
+// Selects elements by tag name (e.g., p, div, h1).
+
+// Returns HTMLCollection.
+let paras = document.getElementsByTagName("p")
+console.log(p.innerText);
+
+
+
+// querry selctor
+// let demo = document.querySelector(".demo")
+// console.log(demo.innerText);
+
+
+
+// querry selctoer all
+let all = document.querySelectorAll(".demo");
+console.log(all.innerText);
+
+    </script>
+    
+</body>
+</html>

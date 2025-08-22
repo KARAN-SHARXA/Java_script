@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p>odl paragraph</p>
+    </div>
+
+    <script>
+        // create new element
+        let container = document.getElementById("container");
+
+        let newpara = document.createElement("p");
+        newpara.innerText="ram ram mitter";
+
+        container.appendChild(newpara);
+    </script>
+</body>
+</html>

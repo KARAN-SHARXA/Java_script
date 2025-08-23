@@ -65,3 +65,18 @@ grandParent.addEventListener("click",()=>{
     e.stopPropagation();
     console.log("Child Clicked");
   });
+  let p = document.querySelector('#practise');
+  let p2 = document.querySelector('#hw');
+
+  p2.addEventListener("click",function(){
+    p.style.color ='red';
+    p.innerText='hi'
+  });
+
+
+  document.querySelector('#ll').addEventListener("clik",()=>{
+    let p = document.querySelector('#EE');
+    p.innerText='kkakakakakakakakak'
+  })
+
+  

@@ -117,7 +117,27 @@ console.log(laptop1.brand);
 
 
 
+//encpsulation
+class Person {
+  #age;
 
+  constructor(name, age) {
+    this.name = name;
+    this.#age = age;
+  }
 
+  getAge() {
+    return this.#age;
+  }
 
+  setAge(newAge) {
+    if (newAge > 0) this.#age = newAge;
+    else console.log("Invalid age");
+  }
+}
 
+let p = new Person("Karan", 21);
+console.log(p.getAge()); // 21
+p.setAge(25);
+console.log(p.getAge()); // 25
+p.setAge(-5);             // Invalid age

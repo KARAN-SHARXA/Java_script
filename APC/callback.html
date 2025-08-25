@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function boilwater (callback){
+            console.log("boiling water..");;
+            callback();
+            
+        }
+        function addTeadLeaves(){
+            console.log("step2: Adding tea leaves");
+            
+        }
+
+        boilwater(addTeadLeaves)
+
+
+        //Anonymous Callback Function
+
+
+
+
+        function doWork(callback){
+            console.log("doing some waork...");
+            callback();
+            
+        }
+        doWork(function add(){
+            console.log("work done..");
+            
+        })
+
+
+
+        console.log("start");
+        setTimeout(function(){
+            console.log("this runs after 2 sec");
+            
+        },2000);
+        console.log("End");
+
+
+        // nested callback hell
+
+
+        setTimeout(()=>{
+            console.log("step 1");
+            setTimeout(()=>{
+                console.log("step2");
+                
+            },2000);
+            
+        },1000);
+
+
+
+
+        function boilWater(callback) {
+    console.log("Boiling water...");
+    callback();
+}
+
+function addTeaLeaves() {
+    console.log("Adding tea leaves...");
+}
+
+function addMilk() {
+    console.log("Adding milk...");
+}
+
+boilWater(function() {
+    addTeaLeaves(function() {
+        addMilk();
+    });
+});
+        
+        
+
+    </script>
+</body>
+</html>  
